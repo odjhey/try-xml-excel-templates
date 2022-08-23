@@ -1,0 +1,138 @@
+ <Worksheet ss:Name="<%= worksheetName %>">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="<%= content.meta.rowCount %>" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s101" ss:Width="120" ss:Span="3"/>
+   <Column ss:Index="5" ss:StyleID="s114" ss:Width="120"/>
+   <Column ss:StyleID="s101" ss:Width="120" ss:Span="9"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s63">
+    <Cell ss:MergeAcross="14"><Data ss:Type="String">Source Data for Migration Object:  Material BOM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s65">
+    <Cell ss:MergeAcross="14"><Data ss:Type="String">Version SAPSCORE 127  - Adjusted Scope - 08.08.2022 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12">
+    <Cell ss:MergeAcross="14" ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">S_BOM_HEADER</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell><Data ss:Type="String">MATNR</Data></Cell>
+    <Cell><Data ss:Type="String">WERKS</Data></Cell>
+    <Cell><Data ss:Type="String">STLAN</Data></Cell>
+    <Cell><Data ss:Type="String">STLAL</Data></Cell>
+    <Cell><Data ss:Type="String">DATUV</Data></Cell>
+    <Cell><Data ss:Type="String">STLST</Data></Cell>
+    <Cell><Data ss:Type="String">AENNR</Data></Cell>
+    <Cell><Data ss:Type="String">BMENG</Data></Cell>
+    <Cell><Data ss:Type="String">BASE_UNIT</Data></Cell>
+    <Cell><Data ss:Type="String">BOM_TEXT</Data></Cell>
+    <Cell><Data ss:Type="String">BOM_LTEXT</Data></Cell>
+    <Cell><Data ss:Type="String">ALT_TEXT</Data></Cell>
+    <Cell><Data ss:Type="String">ALT_LTEXT</Data></Cell>
+    <Cell><Data ss:Type="String">LABOR</Data></Cell>
+    <Cell><Data ss:Type="String">CADKZ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;40;0;C;40;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;40;0;C;40;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;2;0;C;2;0</Data></Cell>
+    <Cell><Data ss:Type="String">EDA;8;0;D;8;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;17;0;C;17;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;40;0;C;40;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;0;0;g;0;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;40;0;C;40;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;0;0;g;0;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+    <Cell><Data ss:Type="String">ETE;1;0;C;1;0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="3" ss:StyleID="m1996513715260"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m1996513715280"><Data ss:Type="String">Validity</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m1996513715300"><Data ss:Type="String">Quantity Data</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m1996513715320"><Data ss:Type="String">BOM and Alternative Text</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m1996513715340"><Data ss:Type="String">Additional data</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="180">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Material Number*&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Plant&#10;&#10;Key uniquely identifying a plant.&#10;&#10;Note: Group BOM if the BOM does not have a reference to a plant. This is a useful option, for example, in the design phase of a BOM which is to be allocated to one or more plants later on&#10;&#10;Type: Text&#10;Length: 40</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">BOM Usage*&#10;&#10;This key defines the area (such as engineering/design or production) where a BOM can be used.&#10;&#10;Type: Text&#10;Length: 40</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Alternative BOM*&#10;&#10;Identifies one BOM in a BOM group.&#10;&#10;Type: Text&#10;Length: 2</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Valid-From Date&#10;&#10;Specifies the start date for the validity period of an object (such as material, BOM, or routing).&#10;&#10;Note:&#10;1. If not set, the system date of the data migration will be used&#10;2. The date format must be the same with the one from user settings, please check the user settings first.&#10;&#10;Type: Date</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">BOM Status*&#10;&#10;Key which describes the current processing status of the BOM.&#10;&#10;This indicator controls subsequent processing of the BOM in various other organizational areas (for example, engineering, costing, MRP).&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Change Number&#10;&#10;Number used to uniquely identify a change master record.&#10;&#10;Note: Please take care when you are using the change number, this number is only used for initial load of BOM creation. It’s not for changes.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Base Quantity*&#10;&#10;Type: Text&#10;Length: 17</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Base Unit of Measure for BOM(ISO format)&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">BOM Description&#10;&#10;Type: Text&#10;Length: 40</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">BOM Description Long Text&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Alternative Text&#10;&#10;Type: Text&#10;Length: 40</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">BOM Alternative Long Text&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">Laboratory/design office&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">CAD Indicator&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+   </Row>
+
+   <%- include('../../commons/data-render-include', {data: content.data}); %>
+  </Table>
+
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>51</TabColorIndex>
+   <Zoom>70</Zoom>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>8</SplitHorizontal>
+   <TopRowBottomPane>8</TopRowBottomPane>
+   <SplitVertical>4</SplitVertical>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>18</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>

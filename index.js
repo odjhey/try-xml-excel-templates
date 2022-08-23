@@ -14,6 +14,7 @@ const hData = [
   ],
 ];
 
+// add type here, data must be aoa {colIdx, value}
 const contents = {
   header: {
     meta: {
